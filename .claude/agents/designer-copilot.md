@@ -5,6 +5,7 @@ tools: Read, Glob, Grep, Bash, Write, Edit, WebSearch, WebFetch
 model: opus
 skills:
   - no-slop
+  - taste
   - ui-design
   - design-systems
   - interaction-design
