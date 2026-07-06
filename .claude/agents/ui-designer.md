@@ -5,6 +5,7 @@ tools: Read, Glob, Grep, Bash, Write, Edit
 model: opus
 skills:
   - no-slop
+  - taste
   - ui-design
   - adaptive-interfaces
   - emil-design-eng

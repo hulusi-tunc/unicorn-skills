@@ -9,10 +9,11 @@ The `no-slop` skill is a standing constraint, not an on-demand tool:
 - **Reviewing** any design or code → `/slop-check` (or the `no-slop` checklist) is part of the review, alongside heuristics and accessibility.
 - Generic AI-default output (interchangeable layouts, hype copy, boilerplate code) is treated as a defect, same severity as a broken state.
 
-## Skills (27 active)
+## Skills (28 active)
 
-### Core guardrail
+### Core guardrails
 - **no-slop** — anti-AI-slop rules for visuals, copy, and code; includes the pre-ship slop check
+- **taste** — the team's taste memory (`taste/TASTE.md` + library); consult before any visual direction
 
 ### Designer craft (8) — one dense skill per discipline
 - **design-research** — interviews, personas, journey maps, JTBD, usability tests, synthesis
@@ -42,8 +43,8 @@ The `no-slop` skill is a standing constraint, not an on-demand tool:
 ### Figma (7)
 `figma-use` (**mandatory prereq** before any `use_figma` call), figma-generate-design-new, figma-implement-design-new, figma-generate-library-new, figma-code-connect, figma-create-design-system-rules-new, figma-create-new-file
 
-## Commands (5)
-`/discover` (research cycle) · `/tokenize` (design system) · `/design-screen` (one screen end-to-end) · `/handoff` (dev handoff) · `/slop-check` (anti-slop review gate)
+## Commands (8)
+`/discover` (research cycle) · `/tokenize` (design system) · `/design-screen` (one screen end-to-end) · `/handoff` (dev handoff) · `/slop-check` (anti-slop review gate) · `/taste-pull` (sync inspiration from Slack #design-inspiration) · `/taste-add` (file inspiration from taste/inbox/) · `/taste-sync` (regenerate the taste profile)
 
 ## Agents (5 — auto-activate)
 Talk naturally; Claude routes. **New designers: say hello to Unicorn.**
@@ -54,6 +55,7 @@ Talk naturally; Claude routes. **New designers: say hello to Unicorn.**
 - **design-reviewer** — heuristics + accessibility + slop check
 
 ## Routing defaults
+- Choosing a visual direction / moodboard / "what do we like" → `taste` + `no-slop`
 - Animation/motion/polish → `emil-design-eng`, **always paired with** `motion-sensitivity` (safety is non-negotiable)
 - New screens / bold direction → `frontend-design` + `no-slop`
 - UI code review → `vercel-web-design-guidelines` + `no-slop`

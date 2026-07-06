@@ -24,7 +24,7 @@ _____':::::_____________________________________\__\______________________
 <h1 align="center">Unicorn Skills</h1>
 
 <p align="center">
-  <em>A lean Claude Code template for design teams: <strong>27 dense skills</strong>, <strong>5 commands</strong>, <strong>5 agents</strong> — and a built-in allergy to AI slop.</em>
+  <em>A lean Claude Code template for design teams: <strong>28 dense skills</strong>, <strong>8 commands</strong>, <strong>5 agents</strong> — and a built-in allergy to AI slop.</em>
 </p>
 
 ---
@@ -65,18 +65,19 @@ npm install -g chrome-devtools-mcp
 ```
 .claude/
   agents/        5 agents — Unicorn leads, 4 specialists support
-  skills/        27 skills (bundled, no plugins, no install)
-  commands/      5 slash commands
+  skills/        28 skills (bundled, no plugins, no install)
+  commands/      8 slash commands
 .mcp.json        Chrome DevTools + Figma
 CLAUDE.md        The system: no-slop policy, inventory, routing
 project/         Drop your PRD/WBS in project/brief/ (Unicorn reads them)
+taste/           The team's taste library — saved inspiration + synthesized profile
 ```
 
-## The 27 skills
+## The 28 skills
 
 | Family | Skills |
 |---|---|
-| **Guardrail** | `no-slop` — the anti-AI-slop rules for visuals, copy, and code |
+| **Guardrails** | `no-slop` — the anti-AI-slop rules for visuals, copy, and code · `taste` — the team's taste memory, read before choosing any visual direction |
 | **Designer craft (8)** | `design-research` · `ux-strategy` · `design-systems` · `ui-design` · `interaction-design` · `prototyping-testing` · `design-ops` · `designer-toolkit` |
 | **Inclusive design (5)** | `inclusive-design` · `accessible-content` · `adaptive-interfaces` · `accessibility-process` · `motion-sensitivity` |
 | **Engineering quality (6)** | `emil-design-eng` · `frontend-design` · `vercel-web-design-guidelines` · `vercel-react-best-practices` · `vercel-react-native-skills` · `shadcn-ui` |
@@ -84,7 +85,7 @@ project/         Drop your PRD/WBS in project/brief/ (Unicorn reads them)
 
 Each craft skill covers its whole discipline — `design-research` alone handles interviews, personas, journey maps, JTBD, usability tests, and synthesis.
 
-## The 5 commands
+## The 8 commands
 
 | Command | What it runs |
 |---|---|
@@ -93,6 +94,11 @@ Each craft skill covers its whole discipline — `design-research` alone handles
 | `/design-screen` | One screen end-to-end: grid → hierarchy → states → inclusive pass → slop check |
 | `/handoff` | Dev handoff: spec, a11y notes, QA checklist, Figma code-connect |
 | `/slop-check` | The anti-slop review gate over any design, copy, or code |
+| `/taste-pull` | Pull new inspiration from Slack `#design-inspiration` into the taste library |
+| `/taste-add` | File inspiration from `taste/inbox/` into the taste library |
+| `/taste-sync` | Regenerate `taste/TASTE.md`, the team's synthesized taste profile |
+
+The taste loop: post inspiration to `#design-inspiration` with a line about why you like it → `/taste-pull` files and analyzes it → `/taste-sync` keeps the team taste profile sharp → every new design consults it. 👍/👎 reactions in Slack re-weight entries. Details: [docs/plans/slack-taste-loop.md](docs/plans/slack-taste-loop.md).
 
 ## The 5 agents
 
