@@ -24,7 +24,7 @@ _____':::::_____________________________________\__\______________________
 <h1 align="center">Unicorn Skills</h1>
 
 <p align="center">
-  <em>A lean Claude Code template for design teams: <strong>28 dense skills</strong>, <strong>7 commands</strong>, <strong>5 agents</strong> — and a built-in allergy to AI slop.</em>
+  <em>A lean Claude Code template for design teams: <strong>28 dense skills</strong>, <strong>8 commands</strong>, <strong>5 agents</strong> — and a built-in allergy to AI slop.</em>
 </p>
 
 ---
@@ -66,7 +66,7 @@ npm install -g chrome-devtools-mcp
 .claude/
   agents/        5 agents — Unicorn leads, 4 specialists support
   skills/        28 skills (bundled, no plugins, no install)
-  commands/      7 slash commands
+  commands/      8 slash commands
 .mcp.json        Chrome DevTools + Figma
 CLAUDE.md        The system: no-slop policy, inventory, routing
 project/         Drop your PRD/WBS in project/brief/ (Unicorn reads them)
@@ -85,7 +85,7 @@ taste/           The team's taste library — saved inspiration + synthesized pr
 
 Each craft skill covers its whole discipline — `design-research` alone handles interviews, personas, journey maps, JTBD, usability tests, and synthesis.
 
-## The 7 commands
+## The 8 commands
 
 | Command | What it runs |
 |---|---|
@@ -94,10 +94,11 @@ Each craft skill covers its whole discipline — `design-research` alone handles
 | `/design-screen` | One screen end-to-end: grid → hierarchy → states → inclusive pass → slop check |
 | `/handoff` | Dev handoff: spec, a11y notes, QA checklist, Figma code-connect |
 | `/slop-check` | The anti-slop review gate over any design, copy, or code |
+| `/taste-pull` | Pull new inspiration from Slack `#design-inspiration` into the taste library |
 | `/taste-add` | File inspiration from `taste/inbox/` into the taste library |
 | `/taste-sync` | Regenerate `taste/TASTE.md`, the team's synthesized taste profile |
 
-The taste library grows into a Slack loop — post inspiration to the design channel, it gets analyzed and filed automatically, and a weekly synthesis keeps the profile sharp. Build plan: [docs/plans/slack-taste-loop.md](docs/plans/slack-taste-loop.md).
+The taste loop: post inspiration to `#design-inspiration` with a line about why you like it → `/taste-pull` files and analyzes it → `/taste-sync` keeps the team taste profile sharp → every new design consults it. 👍/👎 reactions in Slack re-weight entries. Details: [docs/plans/slack-taste-loop.md](docs/plans/slack-taste-loop.md).
 
 ## The 5 agents
 

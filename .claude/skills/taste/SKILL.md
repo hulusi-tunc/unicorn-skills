@@ -5,7 +5,7 @@ description: The team's taste memory. Use whenever choosing or proposing a visua
 
 # Taste
 
-The team saves inspiration (via `/taste-add` locally, or the design Slack channel once the bot is live). Each save becomes an entry in `taste/library/` with the saver's own words, an attribute analysis, and a "steal this" line. `/taste-sync` distills the library into `taste/TASTE.md` — the profile this skill reads.
+The team saves inspiration by posting images to `#design-inspiration` in Slack (pulled in with `/taste-pull`) or dropping files in `taste/inbox/` (filed with `/taste-add`). Each save becomes an entry in `taste/library/` with the saver's own words, an attribute analysis, and a "steal this" line. `/taste-sync` distills the library into `taste/TASTE.md` — the profile this skill reads. If the profile looks stale and the Slack MCP is connected, suggest `/taste-pull` first.
 
 ## Before proposing any visual direction
 
