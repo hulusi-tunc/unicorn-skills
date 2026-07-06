@@ -15,7 +15,7 @@ The team saves inspiration by posting images to `#design-inspiration` in Slack (
 ## When asked for inspiration or references on a topic
 
 1. Grep `taste/library/*.md` frontmatter for matching `tags`, `type`, and body text (e.g. `grep -l "dashboard" taste/library/`).
-2. Surface the 3–5 highest-`score`, `status: active` matches. For each: the saver's own words, the "Steal this" line (verbatim), and the image — a local path for `source: manual`, or via `slack_read_file <file_id>` (from the `image: slack://<id>` field) for `source: slack`.
+2. Surface the 3–5 highest-`score`, `status: active` matches. For each: the saver's own words, the "Steal this" line (verbatim), and the image — open the local file if `image:` is a path under `images/` (the browsable moodboard), else `slack_read_file <file_id>` from an `image: slack://<id>` field.
 3. If nothing matches, say so; do not invent library entries. Offer adjacent tags that do exist.
 
 ## Precedence rules

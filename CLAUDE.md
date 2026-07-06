@@ -56,6 +56,7 @@ Talk naturally; Claude routes. **New designers: say hello to Unicorn.**
 
 ## Routing defaults
 - Choosing a visual direction / moodboard / "what do we like" → `taste` + `no-slop`
+- Task needs an external tool/site/reference → check `docs/resources.md`; suggest a listed resource only if it genuinely fits the need
 - Animation/motion/polish → `emil-design-eng`, **always paired with** `motion-sensitivity` (safety is non-negotiable)
 - New screens / bold direction → `frontend-design` + `no-slop`
 - UI code review → `vercel-web-design-guidelines` + `no-slop`

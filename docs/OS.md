@@ -59,6 +59,10 @@ Running the OS from **Claude Desktop (Cowork)** instead of Claude Code? See `doc
 | Refine | "review this" | `/slop-check` + heuristics + a11y | `reviews/` |
 | Ship | "prepare handoff" | `/handoff` | `handoff/` |
 
+## Resources
+
+Trusted tools and sites live in `docs/resources.md` with a "use when" for each. Share a good one in Slack and it gets added; Claude suggests one only when it actually fits the task, never by reflex.
+
 ## Hard rules
 
 - **No slop ships.** `/slop-check` failing blocks handoff, same as a broken state. Generic AI-default output is a defect.
