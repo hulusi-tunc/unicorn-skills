@@ -1,14 +1,14 @@
 {
   "enabledPlugins": {
-    "design-research@designer-skills": true,
-    "design-systems@designer-skills": true,
-    "ux-strategy@designer-skills": true,
-    "ui-design@designer-skills": true,
-    "interaction-design@designer-skills": true,
-    "prototyping-testing@designer-skills": true,
-    "design-ops@designer-skills": true,
-    "designer-toolkit@designer-skills": true,
-    "frontend-design@claude-plugins-official": true,
-    "shadcn-ui@developer-kit": true
+    "design-research@designer-skills": false,
+    "design-systems@designer-skills": false,
+    "ux-strategy@designer-skills": false,
+    "ui-design@designer-skills": false,
+    "interaction-design@designer-skills": false,
+    "prototyping-testing@designer-skills": false,
+    "design-ops@designer-skills": false,
+    "designer-toolkit@designer-skills": false,
+    "frontend-design@claude-plugins-official": false,
+    "shadcn-ui@developer-kit": false
   }
 }

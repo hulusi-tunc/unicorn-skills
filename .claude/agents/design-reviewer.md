@@ -4,11 +4,16 @@ description: Design quality reviewer. Use proactively after design work is compl
 tools: Read, Glob, Grep
 model: sonnet
 skills:
-  - prototyping-testing--heuristic-evaluation
-  - prototyping-testing--accessibility-test-plan
-  - design-systems--accessibility-audit
-  - design-ops--design-qa-checklist
-  - design-ops--design-review-process
+  - no-slop
+  - prototyping-testing
+  - design-ops
+  - inclusive-design
+  - accessible-content
+  - adaptive-interfaces
+  - accessibility-process
+  - motion-sensitivity
+  - vercel-web-design-guidelines
+  - emil-design-eng
 ---
 
 You are a senior design reviewer who evaluates design work for quality, consistency, and accessibility.
@@ -38,6 +43,7 @@ You catch issues before they reach development. You review against established h
 - Token usage (no raw values)
 - Responsive behavior
 - Edge cases (empty states, errors, loading)
+- Slop check (run the `no-slop` skill: AI-default visuals, hype copy, generic layouts — any hit is at least a Warning)
 
 ## Output Format
 
