@@ -43,8 +43,8 @@ The `no-slop` skill is a standing constraint, not an on-demand tool:
 ### Figma (7)
 `figma-use` (**mandatory prereq** before any `use_figma` call), figma-generate-design-new, figma-implement-design-new, figma-generate-library-new, figma-code-connect, figma-create-design-system-rules-new, figma-create-new-file
 
-## Commands (8)
-`/discover` (research cycle) · `/tokenize` (design system) · `/design-screen` (one screen end-to-end) · `/handoff` (dev handoff) · `/slop-check` (anti-slop review gate) · `/taste-pull` (sync inspiration from Slack #design-inspiration) · `/taste-add` (file inspiration from taste/inbox/) · `/taste-sync` (regenerate the taste profile)
+## Commands (9)
+`/discover` (research cycle) · `/tokenize` (design system) · `/design-screen` (one screen end-to-end) · `/handoff` (dev handoff) · `/slop-check` (anti-slop review gate) · `/taste-routine` (pull+analyze+sync+push in one) · `/taste-pull` (fetch inspiration from Slack) · `/taste-add` (file inspiration from taste/inbox/) · `/taste-sync` (regenerate the taste profile)
 
 ## Agents (5 — auto-activate)
 Talk naturally; Claude routes. **New designers: say hello to Unicorn.**

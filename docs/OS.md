@@ -34,8 +34,13 @@ Two kinds of repo:
 
 ## Daily
 
-- **First person in runs `/taste-pull`** — files whatever the team posted to `#design-inspiration` since the last pull.
+- **First person in runs `/taste-routine`** — one command: pulls new posts from `#design-inspiration`, analyzes them, regenerates the profile, commits, and pushes to GitHub. (Use `/taste-pull` alone if you only want to fetch without syncing/pushing.)
 - See something good anywhere? **Post it to `#design-inspiration` with one line on WHY you like it.** Your words are the signal; "nice" teaches nothing. React 👍/👎 on others' posts — reactions re-weight the taste profile.
+
+### Can it run fully unattended (no human)?
+Not with the Slack connector we use today — it's tied to a logged-in Claude session, so scheduled/headless cloud runs won't have it. Two honest options:
+- **Semi-auto (works now):** keep Claude Desktop or Code open and run `/taste-routine` once a day, or use `/loop 8h /taste-routine` to repeat it while a session is open. Ten seconds of attention; zero setup.
+- **Full-auto (needs setup):** the Vercel bot in `docs/plans/slack-taste-loop.md` (appendix) uses a real Slack bot token + GitHub API on a cron — runs with nobody present. Build it only if the daily command feels like a chore.
 
 ## Weekly
 
