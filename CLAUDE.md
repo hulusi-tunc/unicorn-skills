@@ -62,6 +62,10 @@ Talk naturally; Claude routes. **New designers: say hello to Unicorn.**
 - React perf → `vercel-react-best-practices`; RN/Expo → `vercel-react-native-skills`
 - Build then check: color system → color independence · personas → disability-inclusive dimensions · components → keyboard nav · type scale → flexible typography
 
+## Workspace (team routines: `docs/OS.md`)
+Project artifacts have fixed homes — commands write there, don't scatter files:
+`project/brief/` (inputs) · `project/research/` (/discover) · `project/design-system/` (/tokenize) · `project/screens/` (/design-screen) · `project/reviews/` (/slop-check) · `project/handoff/` (/handoff) · `project/STATE.md` (shared memory — update at every stage transition, append-only decisions) · `taste/` (team taste memory, fed from Slack)
+
 ## Conventions
 - WCAG AA minimum; design for keyboard, screen reader, and reduced motion from the start
 - Design tokens over raw values; adapt outputs to the project's existing stack

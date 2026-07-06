@@ -13,4 +13,4 @@ Design a complete screen end to end.
 6. **Inclusive pass** — Check keyboard, touch targets, contrast, motion, and content using `inclusive-design` skill.
 7. **Slop gate** — Run `no-slop` skill over the spec; fix anything generic before shipping.
 ## Output
-Screen spec: grid, hierarchy, typography, color, spacing, responsive, dark mode, interaction states, inclusive notes, and no-slop result.
+Write to `project/screens/<screen-name>.md` (or a folder if it includes code): grid, hierarchy, typography, color, spacing, responsive, dark mode, interaction states, inclusive notes, and no-slop result. Use `project/design-system/` tokens only. Update `project/STATE.md`.

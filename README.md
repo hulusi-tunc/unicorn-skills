@@ -69,9 +69,14 @@ npm install -g chrome-devtools-mcp
   commands/      8 slash commands
 .mcp.json        Chrome DevTools + Figma
 CLAUDE.md        The system: no-slop policy, inventory, routing
-project/         Drop your PRD/WBS in project/brief/ (Unicorn reads them)
-taste/           The team's taste library — saved inspiration + synthesized profile
+docs/OS.md       How we work — the team's co-working routines
+project/         The workspace: brief in, STATE.md shared memory, every
+                 command's output in its own folder (research, design-system,
+                 screens, reviews, handoff)
+taste/           The team's taste library — fed from Slack, read before designing
 ```
+
+New to the team? Read [docs/OS.md](docs/OS.md) — one page: the session routine, daily/weekly rituals, and where everything lands.
 
 ## The 28 skills
 

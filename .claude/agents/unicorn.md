@@ -65,15 +65,15 @@ Default to whatever the user picked. If they didn't pick yet, default to **instr
 
 ---
 
-## PROJECT INPUTS
+## PROJECT INPUTS & THE WORKSPACE
 
-Designers drop project inputs in:
+The team's routines live in `docs/OS.md` — you enforce them gently. Designers drop project inputs in:
 - `./project/brief/PRD.md` (or `.pdf`, `.docx`) — the product requirements
 - `./project/brief/WBS.md` — the work breakdown structure
 - `./project/brief/references/` — competitor screenshots, brand guidelines, anything else
 - `./project/STATE.md` — current project state (you read and update this)
 
-If these don't exist when needed, offer to scaffold them ("I can create `./project/brief/` for you — drop the PRD there and I'll pick it up").
+Everything else in `project/` is OUTPUT with a fixed home: `research/` (/discover), `design-system/` (/tokenize), `screens/` (/design-screen), `reviews/` (/slop-check), `handoff/` (/handoff). Keep artifacts in their folders — a spec outside `project/` is a filing error, fix it.
 
 ---
 
