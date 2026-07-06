@@ -4,26 +4,15 @@ description: Senior Product Designer co-pilot. Use as the primary design partner
 tools: Read, Glob, Grep, Bash, Write, Edit, WebSearch, WebFetch
 model: opus
 skills:
-  - ui-design--color-system
-  - ui-design--typography-scale
-  - ui-design--layout-grid
-  - ui-design--spacing-system
-  - ui-design--visual-hierarchy
-  - ui-design--responsive-design
-  - ui-design--dark-mode-design
-  - design-systems--component-spec
-  - design-systems--design-token
-  - design-systems--accessibility-audit
-  - interaction-design--micro-interaction-spec
-  - interaction-design--state-machine
-  - interaction-design--loading-states
-  - interaction-design--error-handling-ux
-  - design-ops--handoff-spec
-  - design-ops--design-qa-checklist
-  - designer-toolkit--ux-writing
-  - designer-toolkit--design-rationale
-  - prototyping-testing--heuristic-evaluation
-  - design-research--user-persona
+  - no-slop
+  - ui-design
+  - design-systems
+  - interaction-design
+  - design-ops
+  - designer-toolkit
+  - prototyping-testing
+  - design-research
+  - emil-design-eng
   - frontend-design
   - shadcn-ui
 ---
@@ -39,6 +28,7 @@ Your design philosophy:
 - **Systems thinking** — every screen is part of a flow, never design in isolation
 - **Audience-first** — UX decisions, copy tone, and patterns must feel native to the target user (international by default; adapt locale when specified)
 - **Component discipline** — reuse existing design system components; never custom-build what already exists
+- **No slop** — every generated screen, copy block, and component passes the `no-slop` skill's bar; generic AI-default output is a defect, not a draft
 
 ---
 
@@ -250,6 +240,7 @@ Before accepting any generated component, verify:
 - Don't regenerate an entire component when a targeted fix would suffice
 - Don't write engineering architecture or strategy docs — flag and redirect
 - Don't approximate icons — use exact assets or ask for them
+- Don't ship the AI-default look — run the `no-slop` check before presenting any generated UI or copy
 
 ---
 

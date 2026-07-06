@@ -1,82 +1,68 @@
 # Project Configuration
 
-## Skills (113 active — extras in `.claude/skills-archive/`)
+Design-agency workspace: designers use Claude Code to take apps from brief → design system → UI → code → handoff. Keep it lean; keep it slop-free.
 
-### Engineering Quality Skills (4) — code-level quality, snapshotted from upstream
-Self-contained, no plugin/network dependency — travel with the repo.
-- **emil-design-eng** — Emil Kowalski's animation & UI polish philosophy: animation decision framework (when *not* to animate), motion taste, required Before/After/Why review table format
-- **vercel-web-design-guidelines** — terse `file:line` review for Vercel WIG (a11y, focus, forms, animation, typography, performance, hydration, dark mode, i18n, anti-patterns)
-- **vercel-react-best-practices** — 70 React/Next.js perf rules across 8 categories (waterfalls, bundle, server perf, re-render, rendering, JS perf, advanced)
-- **vercel-react-native-skills** — 36 React Native/Expo rules (FlashList virtualization, Reanimated GPU patterns, Pressable, Expo image, safe areas, monorepo native deps); only triggers on RN/Expo work
+## No-slop policy (always on)
 
-### Designer Skills (72) — design, build, deliver
-- **Design Research (10)** — personas, empathy maps, journey maps, interviews, usability testing
-- **Design Systems (8)** — tokens, components, accessibility, theming, documentation
-- **UX Strategy (8)** — competitive analysis, design principles, experience mapping, alignment
-- **UI Design (9)** — color systems, typography, layout grids, responsive, dark mode
-- **Interaction Design (7)** — micro-interactions, animations, state machines, gestures, error handling
-- **Prototyping & Testing (8)** — wireframes, heuristic evaluation, A/B testing, user flows
-- **Design Ops (7)** — critique, handoff specs, sprint planning, QA checklists, workflows
-- **Designer Toolkit (6)** — rationale, presentations, case studies, UX writing, adoption
-- **Figma (7)** — `figma-use` (mandatory prereq), generate-design, implement-design, generate-library, code-connect, create-design-system-rules, create-new-file
-- **Frontend Design (1)** — distinctive, production-grade UI code (Anthropic official)
-- **shadcn/ui (1)** — Radix UI + Tailwind CSS component patterns
+The `no-slop` skill is a standing constraint, not an on-demand tool:
+- **Generating** any UI, copy, or frontend code → apply `no-slop` rules while generating.
+- **Reviewing** any design or code → `/slop-check` (or the `no-slop` checklist) is part of the review, alongside heuristics and accessibility.
+- Generic AI-default output (interchangeable layouts, hype copy, boilerplate code) is treated as a defect, same severity as a broken state.
 
-> **Optional visual-style packs** (not bundled): `high-end-visual-design`, `minimalist-ui`, `industrial-brutalist-ui`, `stitch-design-taste`, `design-taste-frontend`, `redesign-existing-projects`. Add to `.claude/skills/` per project if a specific aesthetic direction is needed.
+## Skills (27 active)
 
-### Inclusive Design Skills (37) — accessibility, inclusion, cognitive a11y
-Moderate selection optimized for agency frontend delivery. Niche/specialty skills archived to `.claude/skills-archive/` — restorable via `git mv` when needed.
-- **Cognitive Accessibility (7)** — cognitive load, plain language, wayfinding, memory, error recovery, simplify, review
-- **Inclusive Interaction (8)** — keyboard nav, gestures, touch targets, motion sensitivity, multi-modal, feedback, design-flow, audit
-- **Accessible Content (7)** — alt text, headings, forms, links, structure, readable content, review
-- **Inclusive Personas (4)** — generate, disability-inclusive personas, inclusive user stories, scenario map
-- **Adaptive Interfaces (6)** — color independence, flexible typography, information density, responsive accessibility, user preferences, specify
-- **Accessibility Decisions (5)** — compliance mapping, decision documentation, tradeoff analysis, handoff, review
+### Core guardrail
+- **no-slop** — anti-AI-slop rules for visuals, copy, and code; includes the pre-ship slop check
+
+### Designer craft (8) — one dense skill per discipline
+- **design-research** — interviews, personas, journey maps, JTBD, usability tests, synthesis
+- **ux-strategy** — briefs, problem framing, principles, competitive analysis, metrics
+- **design-systems** — tokens, component specs, naming, patterns, theming, icons, docs
+- **ui-design** — color, typography, spacing, grids, hierarchy, responsive, dark mode, dataviz
+- **interaction-design** — micro-interactions, states, loading, errors, feedback, gestures
+- **prototyping-testing** — wireframes, flows, prototype strategy, heuristic eval, A/B tests
+- **design-ops** — critique, reviews, QA checklists, handoff specs, sprints, workflow
+- **designer-toolkit** — rationale, case studies, presentations, UX writing, adoption
+
+### Inclusive design (5)
+- **inclusive-design** — keyboard, touch targets, gestures, multi-modal, cognitive load, plain language, wayfinding, error recovery
+- **accessible-content** — alt text, headings, links, forms, readable content, structure
+- **adaptive-interfaces** — color independence, flexible type, density, user preferences
+- **accessibility-process** — inclusive personas/stories, WCAG mapping, tradeoffs, a11y handoff
+- **motion-sensitivity** — vestibular safety, prefers-reduced-motion, photosensitivity
+
+### Engineering quality (6) — snapshotted, travel with the repo
+- **emil-design-eng** — animation & polish taste; when *not* to animate; Before/After/Why review format
+- **frontend-design** — distinctive production UI, anti-generic by design (Anthropic official)
+- **vercel-web-design-guidelines** — terse `file:line` UI code review (a11y, forms, hydration…)
+- **vercel-react-best-practices** — React/Next.js performance rules
+- **vercel-react-native-skills** — RN/Expo rules; only triggers on RN/Expo work
+- **shadcn-ui** — Radix + Tailwind component patterns
+
+### Figma (7)
+`figma-use` (**mandatory prereq** before any `use_figma` call), figma-generate-design-new, figma-implement-design-new, figma-generate-library-new, figma-code-connect, figma-create-design-system-rules-new, figma-create-new-file
+
+## Commands (5)
+`/discover` (research cycle) · `/tokenize` (design system) · `/design-screen` (one screen end-to-end) · `/handoff` (dev handoff) · `/slop-check` (anti-slop review gate)
 
 ## Agents (5 — auto-activate)
-Just talk naturally. Claude picks the right agent based on your task. **New designers should start by saying hello to Unicorn.**
-- **unicorn** — studio lead & project director; greets newcomers, reads PRD/WBS, tracks project stage, routes to the right specialist. Ask it to be **instructor** (explains every step) or **operator** (just runs the workflow).
-- **designer-copilot** — senior design partner; hands-on design thinking, reviews, prototype iteration
-- **ui-designer** — visual & interaction design specialist
-- **design-system-architect** — components, tokens, theming
-- **design-reviewer** — QA, heuristics, accessibility checks
+Talk naturally; Claude routes. **New designers: say hello to Unicorn.**
+- **unicorn** — studio lead; reads PRD/WBS in `./project/brief/`, tracks stage in `./project/STATE.md`, routes to specialists; **instructor** (explains) or **operator** (just runs) mode
+- **designer-copilot** — senior design partner; challenge → explore → specify
+- **ui-designer** — visual systems: color, type, grids, dark mode
+- **design-system-architect** — tokens, components, theming
+- **design-reviewer** — heuristics + accessibility + slop check
 
-Additional specialist agents (ux-strategist, design-researcher, interaction-designer, design-ops-lead) live in `.claude/agents-archive/` if a project needs deeper specialist routing.
+## Routing defaults
+- Animation/motion/polish → `emil-design-eng`, **always paired with** `motion-sensitivity` (safety is non-negotiable)
+- New screens / bold direction → `frontend-design` + `no-slop`
+- UI code review → `vercel-web-design-guidelines` + `no-slop`
+- React perf → `vercel-react-best-practices`; RN/Expo → `vercel-react-native-skills`
+- Build then check: color system → color independence · personas → disability-inclusive dimensions · components → keyboard nav · type scale → flexible typography
 
-### Project layout (used by Unicorn)
-- `./project/brief/` — drop the PRD, WBS, and any reference materials here
-- `./project/STATE.md` — current project stage, decisions, next step (Unicorn reads & updates)
-
-## Default Skill Routing
-
-When skills overlap, follow these defaults unless the user explicitly asks for a different one:
-
-- **Animation, motion, UI polish, transitions, micro-interactions (implementation/review)** → default to `emil-design-eng`. It has a decision framework (when *not* to animate), specific opinionated values with reasoning, and a required `Before | After | Why` review table format. Other skills (`interaction-design--animation-principles`, `interaction-design--micro-interaction-spec`) are only used when the user explicitly names them or asks for a generic principles primer / formal spec document.
-- **Motion accessibility (vestibular safety, prefers-reduced-motion, photosensitivity)** → `inclusive-interaction--motion-sensitivity` always runs alongside Emil for any motion work — it's harm prevention, not taste, and is non-negotiable.
-- **Code-level UI review (a11y, forms, hydration, dark mode, anti-patterns)** → `vercel-web-design-guidelines` for the file-by-file checklist pass.
-- **React/Next.js performance** → `vercel-react-best-practices`. **React Native/Expo perf** → `vercel-react-native-skills`.
-- **Bold aesthetic direction / building a new screen from scratch** → `frontend-design`.
-
-## How Skills Layer Together
-Designer skills build the system. Inclusive skills extend it for accessibility. Use together:
-1. Design gestures → then design gesture alternatives
-2. Build color system → then audit for color independence
-3. Create personas → then expand with disability dimensions
-4. Define animations → Emil for the motion taste, motion-sensitivity for the safety pass
-5. Write component spec → then verify keyboard navigation
-6. Create typography scale → then ensure flexible typography
-7. Design layouts → then audit responsive accessibility
-
-## How to Use
-- Skills load automatically from `.claude/skills/`
-- Commands available as slash commands from `.claude/commands/`
-- Agents auto-activate from `.claude/agents/`
-- MCP servers (Puppeteer, Chrome DevTools) configured in `.mcp.json`
-- Run `./setup.sh` on a new machine to install marketplace plugins
-
-## Project Conventions
-- Adapt all design outputs to the project's existing stack and conventions
-- Prioritize accessibility (WCAG AA minimum) in all design decisions
-- Use design tokens over raw values whenever possible
-- Design for keyboard, screen reader, and reduced motion from the start
-- Include disability as a natural dimension in all personas and user stories
+## Conventions
+- WCAG AA minimum; design for keyboard, screen reader, and reduced motion from the start
+- Design tokens over raw values; adapt outputs to the project's existing stack
+- Disability is a natural dimension in all personas and user stories
+- Skills/commands/agents live in `.claude/`; MCP servers (Chrome DevTools, Figma) in `.mcp.json`
+- Pre-consolidation versions of everything: git tag `pre-distill`
