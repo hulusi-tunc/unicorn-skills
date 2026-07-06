@@ -10,4 +10,4 @@ Review the target (default: the design/code/copy currently in play) for AI slop.
 3. **Motion pass** — If animation or motion is in scope, review it using `emil-design-eng` skill (Before | After | Why table).
 4. **Verdict** — Consolidate all findings into a single pass/fail table.
 ## Output
-Pass/fail table: one row per finding — check, verdict, `file:line` or screen reference, fix. End with overall PASS or FAIL.
+Pass/fail table: one row per finding — check, verdict, `file:line` or screen reference, fix. End with overall PASS or FAIL. If run on project work, save the report to `project/reviews/slop-check-<YYYY-MM-DD>-<target>.md`.

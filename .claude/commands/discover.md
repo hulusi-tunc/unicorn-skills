@@ -11,4 +11,4 @@ Run a full research discovery cycle.
 4. **Personas** — Create 2-4 personas (disability as a natural dimension) using `design-research` + `inclusive-design` skills.
 5. **Journey map** — Map the primary persona's end-to-end journey using `design-research` skill.
 ## Output
-Findings doc: research plan, interview synthesis, personas, journey map, key insights, and design implications.
+Write to `project/research/`: `findings.md` (plan, synthesis, key insights, design implications), `personas.md`, `journey-map.md`. Update `project/STATE.md`.
