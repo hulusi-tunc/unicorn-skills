@@ -42,6 +42,8 @@ Not with the Slack connector we use today — it's tied to a logged-in Claude se
 - **Semi-auto (works now):** keep Claude Desktop or Code open and run `/taste-routine` once a day, or use `/loop 8h /taste-routine` to repeat it while a session is open. Ten seconds of attention; zero setup.
 - **Full-auto (needs setup):** the Vercel bot in `docs/plans/slack-taste-loop.md` (appendix) uses a real Slack bot token + GitHub API on a cron — runs with nobody present. Build it only if the daily command feels like a chore.
 
+Running the OS from **Claude Desktop (Cowork)** instead of Claude Code? See `docs/cowork-setup.md` — Instructions block, the scheduled taste task, and the one manual test to run before trusting the schedule.
+
 ## Weekly
 
 - **Monday: `/taste-sync`** — regenerates the team taste profile and posts the digest to the channel. React on "aging out" items to keep or kill them.
